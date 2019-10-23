@@ -9,7 +9,7 @@
 
 [Github repo here](https://github.com/eturino/ts-parse-boolean)
 
-Converts to a boolean. Returns false if the value is falsy. If it is truthy it checks it by converting to a string, trimming, upcasing, and checking if the value is not `FALSE` or `0`.
+Converts to a boolean. Returns false if the value is falsy. If it is truthy it checks it by converting to a string, trimming, upcasing, and checking if the value is not `FALSE` or `NO` or `0`.
 
 ## Installation
 
@@ -17,7 +17,20 @@ Converts to a boolean. Returns false if the value is falsy. If it is truthy it c
 
 ## Usage
 
-TBD.
+```typescript
+import parseBoolean from "@eturino/ts-parse-boolean";
+
+parseBoolean(true); // => true
+parseBoolean(false); // => false
+parseBoolean(1); // => true
+parseBoolean(0); // => false
+parseBoolean(-8); // => true
+parseBoolean(" 0 "); // => false
+parseBoolean(" tRue   "); // => true
+parseBoolean(" No   "); // => false
+parseBoolean(" faLse   "); // => false
+parseBoolean(" Whatever   "); // => true
+```
 
 ## Development, Commits, versioning and publishing
 
