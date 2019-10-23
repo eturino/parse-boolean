@@ -2,7 +2,7 @@ const FALSE_STRINGS = ["FALSE", "NO", "0"];
 
 /**
  * Converts to a boolean. Returns false if the value is falsy.
- * If it is truthy it checks it by converting to a string, trimming, upcasing, and checking if the value is not `FALSE` or `0`.
+ * If it is truthy it checks it by converting to a string, trimming, upcasing, and checking if the value is not `FALSE` or `NO` or `0`.
  *
  * @param x
  */
