@@ -11,6 +11,8 @@
 
 Converts to a boolean. Returns false if the value is falsy. If it is truthy it checks it by converting to a string, trimming, upcasing, and checking if the value is not `FALSE` or `NO` or `0`.
 
+If we pass a value that is not a `boolean`, `string`, `number`, `null` or `undefined`, it will return `false`.
+
 ## Installation
 
 `yarn add @eturino/ts-parse-boolean` or `npm install @eturino/ts-parse-boolean`.
@@ -30,6 +32,10 @@ parseBoolean(" tRue   "); // => true
 parseBoolean(" No   "); // => false
 parseBoolean(" faLse   "); // => false
 parseBoolean(" Whatever   "); // => true
+
+// complex values are not parsed and we return false by default
+parseBoolean(["a"]); // => false
+parseBoolean({ a: 1 }); // => false
 ```
 
 ## Development, Commits, versioning and publishing

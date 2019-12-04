@@ -1,6 +1,14 @@
 import parseBoolean from "..";
 
 describe("parseBoolean(s)", () => {
+  it("parseBoolean({ a: 1 }) => false", () => {
+    expect(parseBoolean({ a: 1 })).toBeFalsy();
+  });
+
+  it("parseBoolean(['a']) => false", () => {
+    expect(parseBoolean(["a"])).toBeFalsy();
+  });
+
   it("parseBoolean(true) => true", () => {
     expect(parseBoolean(true)).toBeTruthy();
   });
