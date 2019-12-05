@@ -2,6 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/%40eturino%2Fts-parse-boolean.svg)](https://badge.fury.io/js/%40eturino%2Fts-parse-boolean)
 [![Build Status](https://travis-ci.org/eturino/ts-parse-boolean.svg?branch=master)](https://travis-ci.org/eturino/ts-parse-boolean)
+[![codebeat badge](https://codebeat.co/badges/ee945253-aaba-4ad7-b8ea-3d0fa9fa8b8c)](https://codebeat.co/projects/github-com-eturino-ts-parse-boolean-master)
 [![Maintainability](https://api.codeclimate.com/v1/badges/2b8116da70d362593c6a/maintainability)](https://codeclimate.com/github/eturino/ts-parse-boolean/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/2b8116da70d362593c6a/test_coverage)](https://codeclimate.com/github/eturino/ts-parse-boolean/test_coverage)
 
