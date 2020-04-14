@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/eturino/ts-parse-boolean/compare/v1.1.0...v1.1.1) (2020-04-14)
+
+
+### Bug Fixes
+
+* **deps:** [security] bump acorn from 6.4.0 to 6.4.1 ([#61](https://github.com/eturino/ts-parse-boolean/issues/61)) ([d711476](https://github.com/eturino/ts-parse-boolean/commit/d711476c6014a76f4ea4f6a1794120e186552376))
+
 ## [1.1.0](https://github.com/eturino/ts-parse-boolean/compare/v1.0.0...v1.1.0) (2019-12-04)
 
 

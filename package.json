@@ -1,6 +1,6 @@
 {
   "name": "@eturino/ts-parse-boolean",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": "Eduardo Turiño <eturino@eturino.com>",
   "description": "Converts to a boolean. Returns false if the value is falsy. If it is truthy it checks it by converting to a string, trimming, upcasing, and checking if the value is not `FALSE` or `NO` or `0`.",
   "main": "build/main/index.js",
