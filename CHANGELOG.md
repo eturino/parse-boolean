@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.2](https://github.com/eturino/ts-parse-boolean/compare/v1.1.1...v1.1.2) (2020-05-12)
+
+
+### Bug Fixes
+
+* target ES2017 instead of esnext for module, and ES2015 for main ([104dcf7](https://github.com/eturino/ts-parse-boolean/commit/104dcf7e2f3c70b3b9ce2857fcf1a2b45e8bef51))
+
 ### [1.1.1](https://github.com/eturino/ts-parse-boolean/compare/v1.1.0...v1.1.1) (2020-04-14)
 
 
