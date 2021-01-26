@@ -41,8 +41,6 @@
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
 							<input type="checkbox" id="tsd-filter-externals" checked />
 							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -52,12 +50,7 @@
 	</div>
 	<div class="tsd-page-title">
 		<div class="container">
-			<ul class="tsd-breadcrumb">
-				<li>
-					<a href="globals.html">Globals</a>
-				</li>
-			</ul>
-			<h1>@eturino/ts-parse-boolean</h1>
+			<h1>Project @eturino/ts-parse-boolean</h1>
 		</div>
 	</div>
 </header>
@@ -84,22 +77,23 @@
 				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
 					<h2>Usage</h2>
 				</a>
-				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> parseBoolean <span class="hljs-keyword">from</span> <span class="hljs-string">"@eturino/ts-parse-boolean"</span>;
+				<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #001080">parseBoolean</span><span style="color: #000000"> </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@eturino/ts-parse-boolean&quot;</span><span style="color: #000000">;</span>
 
-parseBoolean(<span class="hljs-literal">true</span>); <span class="hljs-comment">// =&gt; true</span>
-parseBoolean(<span class="hljs-literal">false</span>); <span class="hljs-comment">// =&gt; false</span>
-parseBoolean(<span class="hljs-number">1</span>); <span class="hljs-comment">// =&gt; true</span>
-parseBoolean(<span class="hljs-number">0</span>); <span class="hljs-comment">// =&gt; false</span>
-parseBoolean(<span class="hljs-number">-8</span>); <span class="hljs-comment">// =&gt; true</span>
-parseBoolean(<span class="hljs-string">" 0 "</span>); <span class="hljs-comment">// =&gt; false</span>
-parseBoolean(<span class="hljs-string">" tRue   "</span>); <span class="hljs-comment">// =&gt; true</span>
-parseBoolean(<span class="hljs-string">" No   "</span>); <span class="hljs-comment">// =&gt; false</span>
-parseBoolean(<span class="hljs-string">" faLse   "</span>); <span class="hljs-comment">// =&gt; false</span>
-parseBoolean(<span class="hljs-string">" Whatever   "</span>); <span class="hljs-comment">// =&gt; true</span>
+<span style="color: #795E26">parseBoolean</span><span style="color: #000000">(</span><span style="color: #0000FF">true</span><span style="color: #000000">); </span><span style="color: #008000">// =&gt; true</span>
+<span style="color: #795E26">parseBoolean</span><span style="color: #000000">(</span><span style="color: #0000FF">false</span><span style="color: #000000">); </span><span style="color: #008000">// =&gt; false</span>
+<span style="color: #795E26">parseBoolean</span><span style="color: #000000">(</span><span style="color: #098658">1</span><span style="color: #000000">); </span><span style="color: #008000">// =&gt; true</span>
+<span style="color: #795E26">parseBoolean</span><span style="color: #000000">(</span><span style="color: #098658">0</span><span style="color: #000000">); </span><span style="color: #008000">// =&gt; false</span>
+<span style="color: #795E26">parseBoolean</span><span style="color: #000000">(-</span><span style="color: #098658">8</span><span style="color: #000000">); </span><span style="color: #008000">// =&gt; true</span>
+<span style="color: #795E26">parseBoolean</span><span style="color: #000000">(</span><span style="color: #A31515">&quot; 0 &quot;</span><span style="color: #000000">); </span><span style="color: #008000">// =&gt; false</span>
+<span style="color: #795E26">parseBoolean</span><span style="color: #000000">(</span><span style="color: #A31515">&quot; tRue   &quot;</span><span style="color: #000000">); </span><span style="color: #008000">// =&gt; true</span>
+<span style="color: #795E26">parseBoolean</span><span style="color: #000000">(</span><span style="color: #A31515">&quot; No   &quot;</span><span style="color: #000000">); </span><span style="color: #008000">// =&gt; false</span>
+<span style="color: #795E26">parseBoolean</span><span style="color: #000000">(</span><span style="color: #A31515">&quot; faLse   &quot;</span><span style="color: #000000">); </span><span style="color: #008000">// =&gt; false</span>
+<span style="color: #795E26">parseBoolean</span><span style="color: #000000">(</span><span style="color: #A31515">&quot; Whatever   &quot;</span><span style="color: #000000">); </span><span style="color: #008000">// =&gt; true</span>
 
-<span class="hljs-comment">// complex values are not parsed and we return false by default</span>
-parseBoolean([<span class="hljs-string">"a"</span>]); <span class="hljs-comment">// =&gt; false</span>
-parseBoolean({ a: <span class="hljs-number">1</span> }); <span class="hljs-comment">// =&gt; false</span></code></pre>
+<span style="color: #008000">// complex values are not parsed and we return false by default</span>
+<span style="color: #795E26">parseBoolean</span><span style="color: #000000">([</span><span style="color: #A31515">&quot;a&quot;</span><span style="color: #000000">]); </span><span style="color: #008000">// =&gt; false</span>
+<span style="color: #795E26">parseBoolean</span><span style="color: #000000">({ </span><span style="color: #001080">a:</span><span style="color: #000000"> </span><span style="color: #098658">1</span><span style="color: #000000"> }); </span><span style="color: #008000">// =&gt; false</span>
+</code></pre>
 				<a href="#development-commits-versioning-and-publishing" id="development-commits-versioning-and-publishing" style="color: inherit; text-decoration: none;">
 					<h2>Development, Commits, versioning and publishing</h2>
 				</a>
@@ -110,57 +104,63 @@ parseBoolean({ a: <span class="hljs-number">1</span> }); <span class="hljs-comme
 							<h3>Commits and CHANGELOG</h3>
 						</a>
 						<p>For commits, you should use <a href="https://github.com/commitizen/cz-cli"><code>commitizen</code></a></p>
-						<pre><code class="language-sh">yarn global add commitizen
+						<pre><code class="language-sh"><span style="color: #000000">yarn global add commitizen</span>
 
-<span class="hljs-comment">#commit your changes:</span>
-git cz</code></pre>
+<span style="color: #008000">#commit your changes:</span>
+<span style="color: #000000">git cz</span>
+</code></pre>
 						<p>As typescript-starter docs state:</p>
 						<p>This project is tooled for <a href="https://github.com/conventional-changelog/conventional-changelog">conventional changelog</a> to make managing releases easier. See the <a href="https://github.com/conventional-changelog/standard-version">standard-version</a> documentation for more information on the workflow, or <a href="CHANGELOG.md"><code>CHANGELOG.md</code></a> for an example.</p>
-						<pre><code class="language-sh"><span class="hljs-comment"># bump package.json version, update CHANGELOG.md, git tag the release</span>
-yarn run version</code></pre>
+						<pre><code class="language-sh"><span style="color: #008000"># bump package.json version, update CHANGELOG.md, git tag the release</span>
+<span style="color: #000000">yarn run version</span>
+</code></pre>
 						<p>You may find a tool like <a href="https://github.com/bitjson/wip"><strong><code>wip</code></strong></a> helpful for managing work in progress before you&#39;re ready to create a meaningful commit.</p>
 						<a href="#creating-the-first-version" id="creating-the-first-version" style="color: inherit; text-decoration: none;">
 							<h3>Creating the first version</h3>
 						</a>
 						<p>Once you are ready to create the first version, run the following (note that <code>reset</code> is destructive and will remove all files not in the git repo from the directory).</p>
-						<pre><code class="language-sh"><span class="hljs-comment"># Reset the repo to the latest commit and build everything</span>
-yarn run reset &amp;&amp; yarn run <span class="hljs-built_in">test</span> &amp;&amp; yarn run doc:html
+						<pre><code class="language-sh"><span style="color: #008000"># Reset the repo to the latest commit and build everything</span>
+<span style="color: #000000">yarn run reset &amp;&amp; yarn run </span><span style="color: #795E26">test</span><span style="color: #000000"> &amp;&amp; yarn run doc:html</span>
 
-<span class="hljs-comment"># Then version it with standard-version options. e.g.:</span>
-<span class="hljs-comment"># don't bump package.json version</span>
-yarn run version -- --first-release
+<span style="color: #008000"># Then version it with standard-version options. e.g.:</span>
+<span style="color: #008000"># don&#039;t bump package.json version</span>
+<span style="color: #000000">yarn run version -- --first-release</span>
 
-<span class="hljs-comment"># Other popular options include:</span>
+<span style="color: #008000"># Other popular options include:</span>
 
-<span class="hljs-comment"># PGP sign it:</span>
-<span class="hljs-comment"># $ yarn run version -- --sign</span>
+<span style="color: #008000"># PGP sign it:</span>
+<span style="color: #008000"># $ yarn run version -- --sign</span>
 
-<span class="hljs-comment"># alpha release:</span>
-<span class="hljs-comment"># $ yarn run version -- --prerelease alpha</span></code></pre>
+<span style="color: #008000"># alpha release:</span>
+<span style="color: #008000"># $ yarn run version -- --prerelease alpha</span>
+</code></pre>
 						<p>And after that, remember to <a href="#publish-the-docs">publish the docs</a>.</p>
 						<p>And finally push the new tags to github and publish the package to npm.</p>
-						<pre><code class="language-sh"><span class="hljs-comment"># Push to git</span>
-git push --follow-tags origin master
+						<pre><code class="language-sh"><span style="color: #008000"># Push to git</span>
+<span style="color: #000000">git push --follow-tags origin master</span>
 
-<span class="hljs-comment"># Publish to NPM (allowing public access, required if the package name is namespaced like `@somewhere/some-lib`)</span>
-yarn publish --access public</code></pre>
+<span style="color: #008000"># Publish to NPM (allowing public access, required if the package name is namespaced like `@somewhere/some-lib`)</span>
+<span style="color: #000000">yarn publish --access public</span>
+</code></pre>
 						<a href="#publish-the-docs" id="publish-the-docs" style="color: inherit; text-decoration: none;">
 							<h3>Publish the Docs</h3>
 						</a>
-						<pre><code class="language-sh">yarn run doc:html &amp;&amp; yarn run doc:publish</code></pre>
+						<pre><code class="language-sh"><span style="color: #000000">yarn run doc:html &amp;&amp; yarn run doc:publish</span>
+</code></pre>
 						<p>This will generate the docs and publish them in github pages.</p>
 						<a href="#generate-a-version" id="generate-a-version" style="color: inherit; text-decoration: none;">
 							<h3>Generate a version</h3>
 						</a>
 						<p>There is a single yarn command for preparing a new release. See <a href="https://github.com/bitjson/typescript-starter#one-step-publish-preparation-script">One-step publish preparation script in TypeScript-Starter</a></p>
-						<pre><code class="language-sh"><span class="hljs-comment"># Prepare a standard release</span>
-yarn prepare-release
+						<pre><code class="language-sh"><span style="color: #008000"># Prepare a standard release</span>
+<span style="color: #000000">yarn prepare-release</span>
 
-<span class="hljs-comment"># Push to git</span>
-git push --follow-tags origin master
+<span style="color: #008000"># Push to git</span>
+<span style="color: #000000">git push --follow-tags origin master</span>
 
-<span class="hljs-comment"># Publish to NPM (allowing public access, required if the package name is namespaced like `@somewhere/some-lib`)</span>
-yarn publish --access public</code></pre>
+<span style="color: #008000"># Publish to NPM (allowing public access, required if the package name is namespaced like `@somewhere/some-lib`)</span>
+<span style="color: #000000">yarn publish --access public</span>
+</code></pre>
 					</p>
 				</details>
 			</div>
@@ -168,19 +168,18 @@ yarn publish --access public</code></pre>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li><a href="index.html" class="title">README</a></li>
-					<li class="globals  ">
-						<a href="globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-variable">
-						<a href="globals.html#false_strings" class="tsd-kind-icon">FALSE_<wbr>STRINGS</a>
+					<li class=" tsd-kind-reference">
+						<a href="modules.html#default" class="tsd-kind-icon">default</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="globals.html#parseboolean" class="tsd-kind-icon">parse<wbr>Boolean</a>
+						<a href="modules.html#parseboolean" class="tsd-kind-icon">parse<wbr>Boolean</a>
 					</li>
 				</ul>
 			</nav>
